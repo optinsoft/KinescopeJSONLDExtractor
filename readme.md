@@ -17,11 +17,13 @@ The extension renders a convenient floating button on the main webpage:
 💾 Save (m3u8 V: V1, m3u8 A: A1, mp4 V: V2, mp4 A: A2), where V1 is the number of captured video M3U8 playlists, A1 is the audio M3U8 playlists, V2 is the video stream links, and A2 is the audio stream links.
 Upon clicking the button, the extension automatically generates and downloads the files into your standard Downloads folder under the kinescope subdirectory:
 
+```
 📂 Downloads
  └── 📂 kinescope
       └── 📂 [Your_Video_Title]
            ├── 📄 json-ld.json  <- Full video metadata in JSON format
            └── 📄 log.txt       <- Title, manifest link, duration, and lists of all M3U8 and MP4 links
+```
 
 The directory name is automatically sanitized of characters prohibited by the Windows operating system (\ / : * ? " < > |).
 
